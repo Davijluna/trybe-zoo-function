@@ -5,4 +5,5 @@ function getEmployeeByName(name) {
   const agent = employees.find((func) => func.firstName === name || func.lastName === name);
   return agent === undefined ? {} : agent;
 }
+getEmployeeByName();
 module.exports = getEmployeeByName;
