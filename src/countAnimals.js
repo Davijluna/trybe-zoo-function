@@ -5,7 +5,8 @@ const { species } = data;
 function countAnimals(animal) {
   if (!animal) {
     // eslint-disable-next-line array-callback-return
-    const animals = species.map((bicho) => { animals[bicho.name] = bicho.residents.length; });
+    const animals = {};
+    species.forEach((bicho) => { animals[bicho.name] = bicho.residents.length; });
     return animals;
   }
 
